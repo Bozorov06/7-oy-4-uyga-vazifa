@@ -7,10 +7,8 @@ import savat from '../assets/savat.svg'
 const Navbar = () => {
   const { cartItems } = useSelector((state) => state.cart);
 
-//   const totalPrice = cartItems.reduce((value, item) => value + item.price, 0);
-
   return (
-    <div className="container border-b-2 border-primary flex justify-between items-center py-3">
+    <div className=" border-b-2 border-primary flex justify-between items-center py-3">
       <a href="/" className="flex items-center gap-5 text-primary">
         <img src={logo} alt="logoimg" />
         <div>
@@ -20,7 +18,6 @@ const Navbar = () => {
       </a>
       <div className="flex gap-5 items-center text-2xl">
         <Link to="/cart" className="relative flex items-center">
-          {/* <span>{totalPrice.toLocaleString()} ₽ </span> */}
           <img src={savat} alt="" />
           {cartItems.length > 0 && (
             <span className="absolute top-0 right-0 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">

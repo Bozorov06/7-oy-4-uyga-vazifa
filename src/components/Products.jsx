@@ -20,7 +20,7 @@ const Products = ({ products }) => {
     e.preventDefault();
   };
   return (
-    <div className="container mt-10 min-h-[300px]">
+    <div className="container mx-auto mt-10 min-h-[300px]">
       <div className="flex items-center justify-between">
         <h2 className="font-bold text-3xl text-primary">Все товары</h2>
         <form className="relative" onSubmit={submitHandler}>

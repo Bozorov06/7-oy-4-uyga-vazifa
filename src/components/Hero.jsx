@@ -3,7 +3,7 @@ import HeroImage from '../assets/HeroImage.svg'
 
 const Hero = () => {
   return (
-    <div className="container">
+    <div className="container mx-auto">
       <div className="overflow-hidden px-0 grid grid-cols-3 border-4 border-primary h-[500px] rounded-[3rem] mt-5">
         <div className="bg-[#F7F7F7] pe-1 h-full flex items-center justify-end text-primary text-5xl">
           <span>Новая</span>
