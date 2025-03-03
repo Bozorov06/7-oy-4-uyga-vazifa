@@ -50,7 +50,7 @@ const ProductCard = ({ p }) => {
         >
           <i
             className={`${
-              hasWishlist(p.id) ? "fa text-red-500" : "fa-regular"
+              hasWishlist(p.id) ? " text-red-500" : "fa-regular"
             } fa-heart`}
           ></i>
         </button>
