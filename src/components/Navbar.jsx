@@ -18,9 +18,8 @@ const Navbar = () => {
           <span className="text-sm">Магазин одежды для практики </span>
         </div>
       </a>
-      <div className="flex gap-5 items-center text-primary text-2xl">
+      <div className="flex gap-5 items-center text-2xl">
         <Link to="/cart" className="relative flex items-center">
-          {/* <i className="fa me-2 fa-shopping-cart"></i> */}
           <span>{totalPrice.toLocaleString()} ₽ </span>
           <img src={savat} alt="" />
           {cartItems.length > 0 && (
@@ -30,10 +29,8 @@ const Navbar = () => {
           )}
         </Link>
         <Link to="/wishlist">
-          <i className="fa-regular fa-heart"></i>
         </Link>
         <a href="/">
-          <i className="fa-regular fa-user"></i>
         </a>
       </div>
     </div>
