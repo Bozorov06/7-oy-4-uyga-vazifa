@@ -75,18 +75,11 @@ const ProductCard = ({ p }) => {
                 className={hasInCart(p.id) ? "fa fa-times" : "fa fa-cart-plus"}
               ></i>
             </button>
-            <div className="p-2 hidden bg-slate-100 border border-primary z-50 absolute top-[calc(100%+5px)] justify-center items-center w-[170px] left-1/2 -translate-x-1/2 rounded text-sm">
-              <span>
-                {hasInCart(p.id) ? "Удалить из корзины" : "Добавить в корзину"}
-              </span>
-              <div className="absolute top-0 -translate-y-full h-[13px] left-1/2 -translate-x-1/2">
-                <i className="fa fa-caret-up text-primary"></i>
-              </div>
+            
             </div>
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
